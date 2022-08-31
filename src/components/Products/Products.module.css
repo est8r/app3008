@@ -1,0 +1,10 @@
+.divName{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-right: 90px;
+}
+
+.img{
+  width: 50px;
+}

@@ -1,0 +1,15 @@
+.divGeral{
+  width: 95%;
+  background-color: #fff;
+  margin-top: 35px;
+  border-radius: 12px;
+  box-shadow: 1px 0px 5px 5px rgba(0,0,0,0.06);
+}
+
+.input{
+  width: 400px;
+}
+
+.divInput{
+  margin: 20px 40px;
+}
