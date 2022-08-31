@@ -11,7 +11,7 @@ const Main = ({ name }) => {
         <TextField
           className={S.input}
           id="outlined-basic"
-          label="ester a mais linda de todas"
+          label="pesquisar"
           value={name}
           onChange={({ target }) => setName(target.value)}
         />
