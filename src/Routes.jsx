@@ -21,6 +21,7 @@ arquivo routes
 import React from 'react';
 import { BrowserRouter, Routes as Switch, Route } from 'react-router-dom';
 import Dashboard from './pages/Dashboard/Dashboard.jsx';
+import EditarProduto from './pages/EditarProduto/EditarProduto.jsx';
 import Header from './components/Header/Header';
 
 const Routes = () => {
@@ -29,6 +30,7 @@ const Routes = () => {
       <Header />
       <Switch>
         <Route path="/" element={<Dashboard />} />
+        <Route path="/editarproduto/:id" element={<EditarProduto />} />
       </Switch>
     </BrowserRouter>
   );

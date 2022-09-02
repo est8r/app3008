@@ -6,6 +6,7 @@ import { AiOutlineEdit } from 'react-icons/ai';
 import { BsTrash } from 'react-icons/bs';
 import { deleteProduto } from '../../service/api.js';
 import ModalDelete from '../ModalDelete/ModalDelete.jsx';
+import { useNavigate } from 'react-router-dom';
 
 const Products = ({
   img,
@@ -19,6 +20,7 @@ const Products = ({
   id,
   handleAtualizaTela,
 }) => {
+  const navigate = useNavigate();
   const [openDelete, setOpenDelete] = useState(false);
 
   function abrirModal() {
@@ -70,7 +72,12 @@ const Products = ({
         <Label texto={acoes} />
 
         <section>
-          <AiOutlineEdit />
+          <AiOutlineEdit
+            size={30}
+            color="#5569ff"
+            cursor="pointer"
+            onClick={() => navigate(`/editarproduto/${id}`)}
+          />
           <BsTrash
             size={30}
             color="#5569ff"
