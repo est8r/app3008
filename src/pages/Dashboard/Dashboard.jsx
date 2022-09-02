@@ -5,7 +5,6 @@ import S from './Dashboard.module.css';
 
 const Dashboard = () => {
   const [name, setName] = useState();
-
   return (
     <div className={S.div}>
       <section className={S.section}>

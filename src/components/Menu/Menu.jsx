@@ -11,7 +11,8 @@ const Menu = () => {
         sx={{
           display: 'flex',
           alignItems: 'center',
-          justifyContent: 'center',
+          justifyContent: 'space-around',
+          paddingRight: 10,
           fontSize: 12,
           gap: 13,
           height: 50,
