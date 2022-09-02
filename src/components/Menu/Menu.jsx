@@ -11,10 +11,9 @@ const Menu = () => {
         sx={{
           display: 'flex',
           alignItems: 'center',
-          justifyContent: 'space-around',
+          justifyContent: 'space-evenly',
           paddingRight: 10,
           fontSize: 12,
-          gap: 13,
           height: 50,
           border: (theme) => `1px solid ${theme.palette.divider}`,
           borderRadius: 1,
@@ -32,12 +31,12 @@ const Menu = () => {
           <Label texto="NOME DO PRODUTO" />
           <Divider orientation="vertical" variant="middle" flexItem></Divider>
         </div>
-        <Label texto="PREÇO" />
-        <Label texto="CATEGORIA" />
-        <Label texto="MARCA" />
-        <Label texto="AVALIAÇÃO" />
-        <Label texto="COR" />
-        <Label texto="AÇÕES" />
+        <Label className={S.label} texto="PREÇO" />
+        <Label className={S.label} texto="CATEGORIA" />
+        <Label className={S.label} texto="MARCA" />
+        <Label className={S.label} texto="AVALIAÇÃO" />
+        <Label className={S.label} texto="COR" />
+        <Label className={S.label} texto="AÇÕES" />
       </Box>
     </div>
   );

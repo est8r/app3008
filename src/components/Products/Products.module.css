@@ -8,3 +8,10 @@
 .img{
   width: 50px;
 }
+
+.label{
+  width: 150px;
+  background-color: aqua;
+  padding: 0;
+  margin: 0;
+}

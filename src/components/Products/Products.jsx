@@ -45,7 +45,7 @@ const Products = ({
           alignItems: 'center',
           justifyContent: 'space-evenly',
           fontSize: 12,
-          gap: 13,
+          paddingRight: 5,
           height: 70,
           border: (theme) => `1px solid ${theme.palette.divider}`,
           borderRadius: 1,
@@ -61,15 +61,15 @@ const Products = ({
       >
         <div className={S.divName}>
           <img className={S.img} src={img}></img>
-          <Label texto={nome} />
+          <Label className={S.label} texto={nome} />
         </div>
 
-        <Label texto={preco} />
-        <Label texto={categoria} />
-        <Label texto={marca} />
-        <Label texto={avaliacao} />
-        <Label texto={cor} />
-        <Label texto={acoes} />
+        <Label className={S.label} texto={preco} />
+        <Label className={S.label} texto={categoria} />
+        <Label className={S.label} texto={marca} />
+        <Label className={S.label} texto={avaliacao} />
+        <Label className={S.label} texto={cor} />
+        <Label className={S.label} texto={acoes} />
 
         <section>
           <AiOutlineEdit
